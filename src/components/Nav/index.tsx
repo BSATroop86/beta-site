@@ -1,5 +1,14 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "./logo.png";
+import { Link } from "react-router-dom";
+
+const NavLink = ({
+  to,
+  children,
+}: {
+  to: string;
+  children: React.ReactNode;
+}) => <Nav.Link href={to}>{children}</Nav.Link>;
 
 export const T86Nav = () => (
   <Navbar bg="light" expand="lg">
@@ -10,8 +19,9 @@ export const T86Nav = () => (
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#link">Link</Nav.Link>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/contact">Contact Us</NavLink>
         </Nav>
       </Navbar.Collapse>
     </Container>
