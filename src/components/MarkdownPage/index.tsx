@@ -15,7 +15,7 @@ export const MarkdownPage = ({ location }: { location: string }) => {
         // console.log(text);
         setPostMarkdown(text);
       });
-  }, []);
+  }, [location]);
 
   return postMarkdown ? (
     <>
