@@ -1,6 +1,14 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "./logo.png";
 
+const Links = [
+  { name: "Home", to: "/" },
+  { name: "Summer Camp", to: "./summerCamp" },
+  { name: "Training", to: "./training" },
+  { name: "About", to: "./about" },
+  { name: "Contact", to: "./contact" },
+];
+
 const NavLink = ({
   to,
   children,
@@ -18,9 +26,9 @@ export const T86Nav = () => (
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/contact">Contact Us</NavLink>
+          {Links.map(({ to, name }) => (
+            <NavLink to={to}>{name}</NavLink>
+          ))}
         </Nav>
       </Navbar.Collapse>
     </Container>
