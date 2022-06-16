@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import HonorRoll from "./honorRoll.csv";
 import { usePapaParse } from "react-papaparse";
 import { useT86Title } from "../../hooks/useT86Title";
 import { Page } from "../../components/Page";
+
+import HonorRoll from "./honorRoll.csv";
 import Table from "react-bootstrap/Table";
 
 interface EagleData {

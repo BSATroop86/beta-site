@@ -3,6 +3,7 @@ import logo from "./logo.png";
 
 const Links = [
   { name: "Home", to: "/" },
+  { name: "Calendar Page", to: "/calendar" },
   { name: "New Scouts", to: "./newScoutResources" },
   { name: "Eagles", to: "./eagles" },
   { name: "Eagle Resources", to: "./eagleResources" },

@@ -1,5 +1,5 @@
 import { MarkdownPage } from "./components/MarkdownPage";
-import { Route, Routes, Navigate } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import About from "./pages/about.md";
 import Contact from "./pages/contact.md";
@@ -10,6 +10,7 @@ import NewScouts from "./pages/newScoutResources.md";
 import { HomePage } from "./pages/HomePage";
 import { EaglesPage } from "./pages/EaglesPage";
 import { RedirectPage } from "./pages/RedirectPage";
+import { CalendarPage } from "./pages/CalendarPage";
 
 const MarkdownPaths = [
   { path: "/about", md: About, title: "About" },
@@ -31,6 +32,7 @@ export const T86Routes = () => (
   <Routes>
     <Route index element={<HomePage />} />
     <Route path="/eagles" element={<EaglesPage />} />
+    <Route path="/calendar" element={<CalendarPage />} />
     {MarkdownPaths.map(({ path, md, title }) => (
       <Route
         path={path}

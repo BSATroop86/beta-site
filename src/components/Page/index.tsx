@@ -4,7 +4,8 @@ import styled from "styled-components";
 
 const Container = styled.div`
   div {
-    max-width: 800px;
+    width: 800px;
+    max-width: 95vw;
   }
   padding-top: 1rem;
   display: flex;
