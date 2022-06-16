@@ -1,18 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.2537ff95.css",
-    "main.js": "/static/js/main.62a00c82.js",
+    "main.js": "/static/js/main.25379813.js",
     "static/media/logo.png": "/static/media/logo.c7ccccdcc17014f6229a.png",
+    "static/media/honorRoll.csv": "/static/media/honorRoll.1d1f0b548d3c66bb6832.csv",
     "static/media/training.md": "/static/media/training.fbbb736ea45c7ad58bf1.md",
     "static/media/about.md": "/static/media/about.57ec4cff4380b2cefb85.md",
+    "static/media/eagleResources.md": "/static/media/eagleResources.580c992d0160e44beedf.md",
     "static/media/summerCamp.md": "/static/media/summerCamp.046b8c66f8a0378f9742.md",
+    "static/media/newScoutResources.md": "/static/media/newScoutResources.14d592db2d602f32fd29.md",
     "index.html": "/index.html",
     "static/media/contact.md": "/static/media/contact.753857fc0f2c08dfe464.md",
     "main.2537ff95.css.map": "/static/css/main.2537ff95.css.map",
-    "main.62a00c82.js.map": "/static/js/main.62a00c82.js.map"
+    "main.25379813.js.map": "/static/js/main.25379813.js.map"
   },
   "entrypoints": [
     "static/css/main.2537ff95.css",
-    "static/js/main.62a00c82.js"
+    "static/js/main.25379813.js"
   ]
 }
